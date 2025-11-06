@@ -10,9 +10,9 @@ export default async function (app: FastifyInstance) {
   app.post("/api/v1/orders", async (req, reply) => {
     const parsed = createSchema.safeParse(req.body);
     if (!parsed.success) {
-      return reply.status(400).send({ success: false, error: { code: "INVALID_INPUT", message: parsed.error.message } });
+      return reply.status(400).send({ success: false, error: { code: "INVALID_INPUT", message: parsed.error.message }});
     }
     // TODO: create order in DB and publish event
-    return reply.send({ success: true, data: { id: "stub-order-id", status: "created" } });
+    return reply.send({ success: true, data: { id: "stub-order-id", status: "created" }});
   });
 }
