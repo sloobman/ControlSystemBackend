@@ -1,6 +1,5 @@
 ﻿import { FastifyInstance } from "fastify";
 import { z } from "zod";
-import bcrypt from "bcrypt";
 // import { PrismaClient } from "@prisma/client";
 // const prisma = new PrismaClient();
 
