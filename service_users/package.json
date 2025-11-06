@@ -1,0 +1,26 @@
+﻿{
+  "name": "service_users",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "migrate": "prisma migrate dev --name init --preview-feature"
+  },
+  "dependencies": {
+    "fastify": "^4.0.0",
+    "zod": "^3.0.0",
+    "bcrypt": "^5.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "prisma": "^5.0.0",
+    "@prisma/client": "^5.0.0",
+    "pino": "^8.0.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "supertest": "^6.0.0"
+  }
+}
