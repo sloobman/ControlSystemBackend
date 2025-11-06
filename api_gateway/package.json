@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "api_gateway",
   "version": "0.1.0",
   "private": true,
@@ -8,13 +8,14 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "fastify": "^4.0.0",
-    "fastify-http-proxy": "^6.0.0",
-    "fastify-rate-limit": "^6.0.0",
-    "uuid": "^9.0.0",
-    "pino": "^8.0.0"
+    "@fastify/http-proxy": "^11.3.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "fastify": "^5.6.1",
+    "pino": "^8.0.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/uuid": "^10.0.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.0"
   }

@@ -1,6 +1,6 @@
 ﻿import Fastify from "fastify";
-import proxy from "fastify-http-proxy";
-import rateLimit from "fastify-rate-limit";
+import httpProxy from '@fastify/http-proxy';
+import rateLimit from '@fastify/rate-limit';
 import { v4 as uuidv4 } from "uuid";
 
 const app = Fastify({ logger: true });
@@ -14,8 +14,8 @@ app.addHook("onRequest", async (req, reply) => {
 });
 
 // proxy rules (use env overrides)
-app.register(proxy, { upstream: process.env.USERS_URL || "http://service_users:4000", prefix: "/api/v1/users" });
-app.register(proxy, { upstream: process.env.ORDERS_URL || "http://service_orders:5000", prefix: "/api/v1/orders" });
+app.register(httpProxy, { upstream: process.env.USERS_URL || "http://service_users:4000", prefix: "/api/v1/users" });
+app.register(httpProxy, { upstream: process.env.ORDERS_URL || "http://service_orders:5000", prefix: "/api/v1/orders" });
 
 const start = async () => {
   try {
