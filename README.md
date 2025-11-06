@@ -18,9 +18,9 @@ ControlSystemBackend/
 ├─ .env                  # Переменные окружения (по желанию)
 └─ README.md
 
-````
+```` 
 
-💡 **Подробная структура и настройка окружения** — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git)
+💡 **Подробная структура и настройка окружения** — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Структура-проекта)
 
 ---
 
@@ -30,15 +30,15 @@ ControlSystemBackend/
 - npm >= 9.x  
 - TypeScript >= 5.x  
 
-💡 **Подробнее о требованиях и установке зависимостей** — [Wiki: Требования](https://github.com/sloobman/ControlSystemBackend.wiki.git)
+💡 **Подробнее о требованиях и установке зависимостей** — [Wiki: Требования](https://github.com/sloobman/ControlSystemBackend/wiki/Требования)
 
 ---
 
 ## 🏁 Быстрый старт
 
-1️⃣ **Установка зависимостей** — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B5%D0%B9)  
-2️⃣ **Настройка переменных окружения** — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)  
-3️⃣ **Запуск сервисов локально** — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git#%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE%D0%B2)
+1️⃣ **Установка зависимостей** — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Установка-зависимостей)  
+2️⃣ **Настройка переменных окружения** — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Настройка-переменных-окружения)  
+3️⃣ **Запуск сервисов локально** — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Запуск-сервисов-локально)
 
 ⚠️ **Важно:** Gateway должен стартовать **после** всех сервисов.
 
@@ -47,7 +47,7 @@ ControlSystemBackend/
 ## 🔍 Тестирование API
 
 - Прямой доступ к сервисам или через Gateway  
-- Примеры запросов и тестов — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git#%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+- Примеры запросов и тестов — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Тестирование)
 
 ---
 
@@ -64,7 +64,7 @@ npm run build
 npm start
 ```
 
-💡 **Подробная инструкция по сборке и запуску** — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git#%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B0-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0-production)
+💡 **Подробная инструкция по сборке и запуску** — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Сборка-проекта-(Production))
 
 ---
 
@@ -79,7 +79,7 @@ npm start
 | uuid                 | Генерация уникальных идентификаторов |
 | Pino                 | Логирование                          |
 
-💡 **Подробнее про стек и библиотеки** — [Wiki: Стек технологий](https://github.com/sloobman/ControlSystemBackend.wiki.git)
+💡 **Подробнее про стек и библиотеки** — [Wiki: Стек технологий](https://github.com/sloobman/ControlSystemBackend/wiki/Стек-технологий)
 
 ---
 
@@ -92,6 +92,6 @@ npm start
 | `npm start`     | Запуск скомпилированного сервиса   |
 | `curl ...`      | Тест API                           |
 
-📖 **Подробности команд и примеры** — [Wiki](https://github.com/sloobman/ControlSystemBackend.wiki.git)
+📖 **Подробности команд и примеры** — [Wiki](https://github.com/sloobman/ControlSystemBackend/wiki/Полезные-команды)
 
 
