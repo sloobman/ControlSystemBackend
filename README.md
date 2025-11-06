@@ -1,5 +1,4 @@
-﻿```markdown
-# ControlSystemBackend
+﻿### ControlSystemBackend
 
 Backend-часть монолитного веб-приложения для централизованного управления строительными объектами.  
 Проект разделён на несколько сервисов с отдельными Fastify-серверами и единым API Gateway.
@@ -169,5 +168,3 @@ npm start
 | `npm start`                      | Запуск скомпилированного сервиса   |
 | `curl http://localhost:PORT/...` | Тест API                           |
 
-
-```
