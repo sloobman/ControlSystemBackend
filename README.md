@@ -170,4 +170,4 @@ npm start
 | `curl http://localhost:PORT/...` | Тест API                           |
 
 
-
+```
