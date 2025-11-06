@@ -18,6 +18,32 @@ services:
     image: jaegertracing/all-in-one:1.49
     ports: ["6831:6831/udp","16686:16686"]
 
-# api_gateway, service_users, service_orders будут добавлены локально и настроены в следующих шагах
+  api_gateway:
+    build: ./api_gateway
+    environment:
+      - USERS_URL=http://service_users:4000
+      - ORDERS_URL=http://service_orders:5000
+      - NODE_ENV=development
+    depends_on: [service_users, service_orders]
+    ports: ["3000:3000"]
+
+  service_users:
+    build: ./service_users
+    environment:
+      - DATABASE_URL=postgresql://svc:svcpass@postgres:5432/control_db
+      - RABBITMQ_URL=amqp://rabbitmq
+      - NODE_ENV=development
+    ports: ["4000:4000"]
+    depends_on: [postgres, rabbitmq]
+
+  service_orders:
+    build: ./service_orders
+    environment:
+      - DATABASE_URL=postgresql://svc:svcpass@postgres:5432/control_db
+      - RABBITMQ_URL=amqp://rabbitmq
+      - NODE_ENV=development
+    ports: ["5000:5000"]
+    depends_on: [postgres, rabbitmq]
+
 volumes:
   pgdata:
